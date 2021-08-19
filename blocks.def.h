@@ -5,8 +5,10 @@ static const Block blocks[] = {
     {"",        "block-torrent",        20,                     7},
     {"",        "block-mem",            10,                     0},
     {"",        "block-cpu-temp",       10,                     0},
+    {"",        "block-cpu",            20,                     0},
     {"",        "block-vol",            0,                     10},
     {"",        "block-battery",        5,                      0},
+    {"",        "block-net",            5,                      0},
     {"",        "block-date",           60,                     0},
 };
 //block-backlight

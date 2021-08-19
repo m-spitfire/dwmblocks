@@ -2,7 +2,7 @@ PREFIX ?= /usr/local
 CC ?= cc
 LDFLAGS = -lX11
 
-output: dwmblocks.c blocks.def.h blocks.h
+output: dwmblocks.c blocks.h
 	${CC}  dwmblocks.c $(LDFLAGS) -o dwmblocks
 blocks.h:
 	cp blocks.def.h $@
@@ -15,3 +15,5 @@ install: output
 	install -m 0755 dwmblocks $(DESTDIR)$(PREFIX)/bin/dwmblocks
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/dwmblocks
+
+.PHONY: clean install uninstall
